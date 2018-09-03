@@ -62,7 +62,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''. ./env/bin/activate
-                    python scrapersite/setup.py sdist develop
+                    python setup.py sdist develop
                 deactivate'''
             }
         }
@@ -70,7 +70,7 @@ pipeline {
         stage('Deploy staging') {
             steps {
                 sh '''. ./env/bin/activate
-                    python scrapersite/setup.py sdist install
+                    python setup.py sdist install
                 deactivate'''
             }
         }

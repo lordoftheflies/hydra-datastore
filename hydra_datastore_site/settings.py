@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hydra_datastore.apps.HydraDatastoreConfig',
 ]
 
 MIDDLEWARE = [

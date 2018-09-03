@@ -4,8 +4,8 @@ from django.apps import AppConfig
 
 logger = logging.getLogger(__name__)
 
-class DatastoreConfig(AppConfig):
-    name = 'datastore'
+class HydraDatastoreConfig(AppConfig):
+    name = 'hydra_datastore'
     icon = '<i class="material-icons">settings_applications</i>'
     verbose_name = 'Datastore'
     order = 2
